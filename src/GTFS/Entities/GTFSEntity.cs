@@ -37,6 +37,10 @@ namespace GTFS.Entities
     public abstract class GTFSEntity
     {
         /// <summary>
+        /// The FeedId that this Entity belongs to. We're pulling these from the Mobility Database API.
+        /// </summary>
+        public string FeedId { get; set; }
+        /// <summary>
         /// Gets or sets a tag.
         /// </summary>
         /// <remarks>Can be used to attach extra information.</remarks>
